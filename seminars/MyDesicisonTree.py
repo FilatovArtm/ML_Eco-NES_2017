@@ -1,8 +1,10 @@
 import numpy as np
 
+
 class MyDecisionTree:
     def __init__(self, min_leaf_size=1):
         self.min_leaf_size_ = min_leaf_size
+        self.tree_ = None
 
     def predict(self, x_test):
         return self.tree_(x_test)
